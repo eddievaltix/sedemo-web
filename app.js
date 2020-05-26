@@ -21,6 +21,7 @@ app.set('view engine', 'ejs');
 //index page
 app.get('/', function (req, res) {
     const ip = req.clientIp;
+    ip = ip.replace('::ffff:', '');
     var hostmessage = 'Welcome to this server hosted on: ' + hostipAddress;
     var message = 'I see you are browsing from: ' + ip;
     res.render("index.ejs", {
