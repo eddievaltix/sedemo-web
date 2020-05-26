@@ -1,0 +1,25 @@
+{
+  "name": "sedemo-web",
+  "version": "1.0.0",
+  "description": "Valtix SE Demo Web Site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddievaltix/sedemo-web.git"
+  },
+  "author": "Eddie Tang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eddievaltix/sedemo-web/issues"
+  },
+  "homepage": "https://github.com/eddievaltix/sedemo-web#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "request-ip": "^2.1.3"
+  }
+}

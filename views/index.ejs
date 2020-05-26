@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Valtix SE Demo Web App</title>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/sedemo.css">
+</head>
+
+<body>
+    <div class="testbox">
+        <form id="unitForm" class="" action="/" method="post">
+            <div class="banner">
+                <img src="images/valtix.jpg" alt="strata logo image">
+            </div>
+            <br />
+            <fieldset>
+                <legend>Welcome</legend>
+                <div>
+                    <p><%= hostipmessage %></p>
+                    <p><%= ipmessage %></p>
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>Announcement</legend>
+                <div class="question">
+                    <label>The Big Question</label>
+                    <div class="question-answer">
+                        <div>
+                            <input type="radio" value="Chicken" id="radio_Chicken" name="bigquestion" />
+                            <label for="radio_Chicken" class="radio"><span>Chicken</span></label>
+                        </div>
+                        <div>
+                            <input type="radio" value="Egg" id="radio_Egg" name="bigquestion" />
+                            <label for="radio_Egg" class="radio"><span>Egg</span></label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email1">Email Address</label>
+                        <input id="email1" type="text" name="email1" />
+                    </div>
+                    <div class="btn-block">
+                        <button type="submit" href="/">Submit</button>
+                    </div>
+            </fieldset>
+        </form>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
