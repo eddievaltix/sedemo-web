@@ -1,5 +1,5 @@
 //declaring environment variables
-const port=80;
+const port=3000;
 
 //declaring required libraries
 var express = require('express');
