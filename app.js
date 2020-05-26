@@ -20,7 +20,7 @@ app.set('view engine', 'ejs');
 
 //index page
 app.get('/', function (req, res) {
-    const ip = req.clientIp;
+    var ip = req.clientIp;
     if (ip.substr(0, 7) == "::ffff:") {
         ip = ip.substr(7)
     }
@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
 
 //index page
 app.post('/', function (req, res) {
-    const ip = req.clientIp;
+    var ip = req.clientIp;
     if (ip.substr(0, 7) == "::ffff:") {
         ip = ip.substr(7)
     }
