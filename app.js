@@ -36,6 +36,9 @@ app.get('/', function (req, res) {
 //index page
 app.post('/', function (req, res) {
     const ip = req.clientIp;
+    if (ip.substr(0, 7) == "::ffff:") {
+        ip = ip.substr(7)
+    }
     var hostmessage = 'Welcome to this server hosted on: ' + hostipAddress;
     var message = 'I see you are browsing from: ' + ip;
     res.render("index.ejs", {
