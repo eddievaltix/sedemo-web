@@ -1,0 +1,18 @@
+[Unit]
+Description=app.js - valtix se demo
+Documentation=https://github.com/eddievaltix/sedemo-web
+
+[Service]
+# set the working directory to have consistent relative paths
+WorkingDirectory=/home/ec2-user/sedemo-web
+Type=simple
+User=ec2-user
+ExecStart=/usr/bin/node /home/ec2-user/sedemo-web
+Restart=on-failure
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=valtixsedemo_service
+
+[Install]
+WantedBy=multi-user.target
+
