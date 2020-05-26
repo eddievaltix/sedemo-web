@@ -39,7 +39,7 @@ app.post('/', function (req, res) {
         ipmessage: message,
         hostipmessage: hostmessage
     });
-    res.end(ip);
+    //res.end(ip);
 });
 
 //Use this section only if creating a HTTP server
