@@ -1,6 +1,7 @@
 # sedemo-web
 simple express webdemo
 starts a simple webapp on port 3000
+https://github.com/eddievaltix/sedemo-web.git
 
 for deployment in aws:
 - deploy amazon linux 2 instance and use userdata.sh as user data script
